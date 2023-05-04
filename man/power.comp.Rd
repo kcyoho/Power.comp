@@ -19,7 +19,7 @@
 
 \item{alpha}{A numeric object giving the desired significance level of the test. Default = 0.05}
 
-\item{print.power}{Optional command to print the dataframe of power values from which the graph is produced. Takes values TRUE and FALSE. Default = FALSE}
+\item{print.power}{Optional command to print the dataframe of power values from which the graph is produced. Takes values TRUE and FALSE. Default = FALSE}}
 
 \details{power.comp simulates new data for each effect size and runs Friedman and ANOVA tests on the data; this is repeated n_sims number of times. It then sums the total number of null hypothesis rejections for a given effect size and divides by n_sims to calculate power.}}
 
