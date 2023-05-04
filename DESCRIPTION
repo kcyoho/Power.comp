@@ -8,7 +8,10 @@ Description: This package simulates data from various distributions for an unrep
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Imports: ggplot2, tidyr, cowplot, evd
+Depends: evd,
+    cowplot,
+    tidyr,
+    ggplot2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
