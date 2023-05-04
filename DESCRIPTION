@@ -1,0 +1,14 @@
+Package: af.power.comp
+Type: Package
+Title: Power Comparison of ANOVA and Friedman's tests
+Version: 0.1.0
+Author: Kelie Yoho, Anna Hawsw
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package simulates data from various distributions for an unreplicated complete block design, compares a parametric and nonparametric approach to analysis, and graphs the relative powers of those approaches under the assumed conditions.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, tidyr, cowplot, evd
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
