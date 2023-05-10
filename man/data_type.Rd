@@ -45,7 +45,6 @@ Anna Hawse
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-library(evd)
 data_type("normal", 5)
 data_type("cauchy", Mean1 = 0, Mean2 = 50, Mean3 = 100)
 data_type("gumbel", effect = 10, N = 10, SD = 5)
