@@ -33,7 +33,7 @@ Returns a matrix containing the test statistic, p-value, and decision of the ANO
 ## Randomly generated data from the cauchy distribution for an unreplicated block design.
 ## k = 4 treatments and b = 6 blocks.
 ## Scale is assumed to be the same across all treatments.
-X <- .frame(response = c(rcauchy(6,0,3.25), rcauchy(6,8,3.25),
+X <- data.frame(response = c(rcauchy(6,0,3.25), rcauchy(6,8,3.25),
                             rcauchy(6,5,3.25), rcauchy(6,11,3.25)),
                       treatment = factor(c(rep("trt1", times = 6),
                                         rep("trt2", times = 6),
