@@ -40,4 +40,5 @@ Zimmerman, D. W., & Zumbo, B. D. (1993). Relative Power of the Wilcoxon Test, th
 power.comp(dist = "cauchy", n_sims = 50L, effect = 1:30, print.power = TRUE)
 
 power.comp("normal", effect = seq(1,20,by = 2), sd = 4, alpha = 0.01)
+}
 
