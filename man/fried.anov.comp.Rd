@@ -7,7 +7,7 @@ fried.anova.comp performs ANOVA and Friedman rank sum tests on unreplicated  com
 \usage{fried.anov.comp(X, response = NULL, treatment = NULL, block = NULL, alpha = 0.05)}
 
 \arguments{
-  \item{X}{{A data frame or matrix. Data must contain separate columns for the "response", "treatment", and "block" variables, and must represent an unreplicated complete block design.}
+  \item{X}{A data frame or matrix. Data must contain separate columns for the "response", "treatment", and "block" variables, and must represent an unreplicated complete block design.}
 
 \item{response}{The column of the matrix or data frame X containing the dependent variable. Must be numeric. Not required if "response" is already a column name in the data set. }
 
@@ -20,8 +20,7 @@ fried.anova.comp performs ANOVA and Friedman rank sum tests on unreplicated  com
 \details{
 fried.anov.comp is intended to demonstrate how the traditional ANOVA test compares to the Friedman Rank Sum test a nonparametric alternative for unreplicated block designs), particularly when the ANOVA assumption of normality is violated.
 }
-\value{
-Returns a matrix containing the test statistic, p-value, and decision of the ANOVA and Friedman's Rank Sum tests.}
+\value{Returns a matrix containing the test statistic, p-value, and decision of the ANOVA and Friedman's Rank Sum tests.}
 
 \author{Kelie Yoho}
 
