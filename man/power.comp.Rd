@@ -35,9 +35,6 @@ Zimmerman, D. W., & Zumbo, B. D. (1993). Relative Power of the Wilcoxon Test, th
 \code{\link{fried.anov.comp}} }
 
 \examples{
-library(tidyr)
-library(ggplot2)
-library(cowplot)
 ## Data simulation and hypothesis testing are included within the function.
 
 power.comp(dist = "cauchy", n_sims = 50L, effect = seq(0,30, by = 0.5), print.power = TRUE)
