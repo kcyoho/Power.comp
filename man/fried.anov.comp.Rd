@@ -7,13 +7,13 @@ fried.anova.comp performs ANOVA and Friedman rank sum tests on unreplicated  com
 \usage{fried.anov.comp(X, response = NULL, treatment = NULL, block = NULL, alpha = 0.05)}
 
 \arguments{
-  \item{X}{A data frame or matrix such as that produced by the data_type function. Data must contain column names "response" "treatment" and "block", and represent an unreplicated randomized complete block design.}
+  \item{X}{{A data frame or matrix. Data must contain separate columns for the "response", "treatment", and "block" variables, and must represent an unreplicated complete block design.}
 
-\item{response}{The column of the matrix or data frame containing the dependent variable. Must be numeric. Not required if "response" is already a column name in the data set. }
+\item{response}{The column of the matrix or data frame X containing the dependent variable. Must be numeric. Not required if "response" is already a column name in the data set. }
 
-\item{treatment}{The column of the matrix or data frame containing the treatment variable. Not required if "treatment" is already a column name in the data set.}
+\item{treatment}{The column of the matrix or data frame X containing the treatment variable. Not required if "treatment" is already a column name in the data set.}
 
-\item{block}{The column of the matrix or data frame containing the block variable. Not required if "block" is already a column name in the data set.}
+\item{block}{The column of the matrix or data frame X containing the block variable. Not required if "block" is already a column name in the data set.}
 
 \item{alpha}{A numeric object giving the desired significance level of the test. Default = 0.05}
 }
