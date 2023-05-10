@@ -41,12 +41,15 @@ X <- data.frame(response = c(rcauchy(6,0,3.25), rcauchy(6,8,3.25),
                                         rep("trt4", times = 6))),
                       block = factor(rep(1:6)))
 
-fried.anov.comp(X, alpha = 0.05 )
+X
 
+fried.anov.comp(X, alpha = 0.05 )
 
 ## the data_type function can be used to generate data for k= 3 treatments
 
 sim.dat <- data_type("gumbel", effect = 7, SD = 5)
+
+sim.dat
 
 fried.anov.comp(sim.dat, alpha = 0.01)
 
@@ -57,6 +60,8 @@ O.ex <- data.frame(y = c(rnorm(5,0,2), rnorm(5,3,2), rnorm(5,5,2)),
                             rep("trt2", times = 5),
                             rep("trt3", times = 5))),
                 bl = factor(rep(1:5)))
+
+O.ex
 
 fried.anov.comp(O.ex, response = O.ex[,1], treatment = O.ex[,2], block = O.ex[,3])
 
