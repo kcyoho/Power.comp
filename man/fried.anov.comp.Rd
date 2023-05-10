@@ -2,8 +2,7 @@
 \alias{fried.anov.comp}
 \title{Comparison of the Friedman Rank Sum and ANOVA tests}
 \description{
-fried.anova.comp performs ANOVA and Friedman rank sum tests on unreplicated  complete block data, and returns the test statistic, p-value, and whether or not the null hypothesis is rejected based on a provided alpha.
-}
+fried.anova.comp performs ANOVA and Friedman rank sum tests on unreplicated  complete block data.}
 \usage{fried.anov.comp(X, response = NULL, treatment = NULL, block = NULL, alpha = 0.05)}
 
 \arguments{
