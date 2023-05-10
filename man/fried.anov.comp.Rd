@@ -50,7 +50,6 @@ sim.dat <- data_type("gumbel", effect = 7, SD = 5)
 
 fried.anov.comp(sim.dat, alpha = 0.01)
 
-
 ## Column names may be other than "response", "treatment", and "block"
 
 O.ex <- data.frame(y = c(rnorm(5,0,2), rnorm(5,3,2), rnorm(5,5,2)),
@@ -59,7 +58,7 @@ O.ex <- data.frame(y = c(rnorm(5,0,2), rnorm(5,3,2), rnorm(5,5,2)),
                             rep("trt3", times = 5))),
                 bl = factor(rep(1:5)))
 
-fried.anov.comp(O.ex, response = X[,1], treatment = X[,2], block = X[,3])
+fried.anov.comp(O.ex, response = O.ex[,1], treatment = O.ex[,2], block = O.ex[,3])
 
 fried.anov.comp(O.ex, response = O.ex$y, treatment = O.ex$trt, block = O.ex$bl)
 }
