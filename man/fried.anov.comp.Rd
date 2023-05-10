@@ -33,7 +33,7 @@ Returns a matrix containing the test statistic, p-value, and decision of the ANO
 ## Randomly generated data from the cauchy distribution for an unreplicated block design.
 ## k = 4 treatments and b = 6 blocks.
 ## Scale is assumed to be the same across all treatments.
-X <- data.frame(response = c(rcauchy(6,0,3.25), rcauchy(6,8,3.25),
+X <- .frame(response = c(rcauchy(6,0,3.25), rcauchy(6,8,3.25),
                             rcauchy(6,5,3.25), rcauchy(6,11,3.25)),
                       treatment = factor(c(rep("trt1", times = 6),
                                         rep("trt2", times = 6),
@@ -42,6 +42,14 @@ X <- data.frame(response = c(rcauchy(6,0,3.25), rcauchy(6,8,3.25),
                       block = factor(rep(1:6)))
 
 fried.anov.comp(X, alpha = 0.05 )
+
+
+## the data_type function can be used to generate data for k= 3 treatments
+
+sim.dat <- data_type("gumbel", effect = 7, SD = 5)
+
+fried.anov.comp(sim.dat, alpha = 0.01)
+
 
 ## Column names may be other than "response", "treatment", and "block"
 
@@ -54,7 +62,4 @@ O.ex <- data.frame(y = c(rnorm(5,0,2), rnorm(5,3,2), rnorm(5,5,2)),
 fried.anov.comp(O.ex, response = X[,1], treatment = X[,2], block = X[,3])
 
 fried.anov.comp(O.ex, response = O.ex$y, treatment = O.ex$trt, block = O.ex$bl)
-
-## the data_type function within the af.power.comp package can be used to generate data
-## for k= 3 treatments to easily pass into fried.anova.comp.
 }
