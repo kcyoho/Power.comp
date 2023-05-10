@@ -17,7 +17,7 @@ fried.anova.comp performs ANOVA and Friedman rank sum tests on unreplicated  com
 \item{alpha}{A numeric object giving the desired significance level of the test. Default = 0.05}
 }
 \details{
-fried.anov.comp is intended to demonstrate how the traditional ANOVA test compares to the Friedman Rank Sum test a nonparametric alternative for unreplicated block designs), particularly when the ANOVA assumption of normality is violated.
+fried.anov.comp is intended to demonstrate how the traditional ANOVA test compares to the Friedman Rank Sum test (a nonparametric alternative for unreplicated block designs), particularly when the ANOVA assumption of normality is violated.
 }
 \value{Returns a matrix containing the test statistic, p-value, and decision of the ANOVA and Friedman's Rank Sum tests.}
 
