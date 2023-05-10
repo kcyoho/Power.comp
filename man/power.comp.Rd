@@ -13,7 +13,7 @@
 
 \item{n_sims}{An integer object representing the number of times to repeat the data generation process for each effect size. Larger values are associated with more precise estimates of power, but require more computing power. Default = 25}
 
-\item{effect}{A numeric vector containing the range of treatment effect values from which to generate data. Corresponds to the x-axis values in the output graph.}
+\item{effect}{A numeric vector containing the range of treatment effect values from which to generate data. Corresponds to the domain of the output graph.}
 
 \item{sd}{A numeric object giving the desired standard deviation (for normal) or scale (for gumbel and cauchy) of the data generating distributions. sd is assumed to be consistent across all treatment groups. Default = 10}
 
